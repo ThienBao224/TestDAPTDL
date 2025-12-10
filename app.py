@@ -72,7 +72,12 @@ st.title("📊 Exploratory Data Analysis (EDA) – Bất động sản")
 # ==========================================
 if menu == "4.1 Phân tích mô tả":
     st.header("4.1 Phân tích mô tả")
-
+    st.header("4.1 Phân tích mô tả")
+    st.subheader("Kiểm tra dữ liệu")
+    st.write(df.head())
+    st.write(df.shape)
+    st.write(df["Quận/Huyện"].unique())
+    st.write(df.describe())
     if "Giá (tỷ)" in df.columns:
         st.subheader("📌 Phân bố giá (TỶ VND)")
         fig, ax = plt.subplots()
